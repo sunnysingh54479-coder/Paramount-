@@ -56,4 +56,124 @@ form button {
 form button:hover {
   background: #0056b3;
 }
+
+```
+```css
+/* General Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f5f7; /* Light blueish-grey */
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #004aad; /* Dark blue */
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #0066cc; /* Medium blue */
+  text-align: center;
+  padding: 12px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd00; /* Yellow highlight */
+}
+
+/* Main Content */
+main {
+  padding: 30px 20px;
+  background-color: #ffffff; /* White main content for contrast */
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #004aad;
+}
+
+/* Achievers / Toppers Section */
+.achievers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.achiever {
+  text-align: center;
+  width: 150px;
+}
+
+.achiever img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.achiever p {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+/* Buttons / Forms */
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #0066cc;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #004aad;
+}
+
+/* Footer (if any) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004aad;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Images */
+.director-photo {
+  max-width: 200px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 ```
