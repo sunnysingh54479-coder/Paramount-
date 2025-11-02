@@ -5,27 +5,144 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>न्यू पैरामाउंट कोचिंग सेंटर</title>
-<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background: url('background-stethoscope.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color:#fff;
+}
+header {
+    text-align:center;
+    padding: 20px;
+    background: rgba(0,0,128,0.7);
+}
+header h1 {
+    margin:0;
+    color:#ffdd00;
+    font-size:2rem;
+    text-shadow: 2px 2px 4px #000;
+}
+nav {
+    margin-top:15px;
+}
+nav a {
+    text-decoration:none;
+    color:#fff;
+    margin:0 15px;
+    padding:10px 25px;
+    background: #28a745;
+    border-radius:25px;
+    font-weight:700;
+    transition: 0.3s;
+}
+nav a:hover {
+    background:#1e7e34;
+    transform: scale(1.1);
+}
+.hero {text-align:center;
+    padding:60px 20px;
+    background: rgba(0,0,128,0.5);
+}
+.hero h2 { font-size:1.8rem; margin-bottom:20px; }
+.hero p { font-size:1.1rem; max-width:800px; margin:0 auto; }
+
+section.achievers {
+    max-width:1000px;
+    margin:50px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+.achiever-card {
+    width:150px;
+    border-radius:20px;
+    overflow:hidden;
+    background: rgba(0,0,0,0.6);
+    text-align:center;
+    transition: transform 0.3s;
+}
+.achiever-card img {
+    width:100%;
+    border-radius:20px;
+}
+.achiever-card:hover { transform: scale(1.1); }
+.achiever-card p { margin:10px 0; }
+
+.buttons-section {
+    text-align:center;
+    margin:40px 0;
+}
+.buttons-section button {
+    padding:15px 30px;
+    margin:0 15px;
+    font-size:1rem;
+    font-weight:700;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+#iit-btn { background:#007bff; color:#fff; }
+#neet-btn { background:#dc3545; color:#fff; }
+.buttons-section button:hover { opacity:0.8; transform:scale(1.05); }
+
+footer {
+    text-align:center;
+    padding:20px;
+    background: rgba(0,0,128,0.7);
+    margin-top:40px;
+}
+footer a { color:#fff; margin:0 10px; font-weight:700; text-decoration:none; }
+footer a:hover { color:#ffdd00; }</style>
 </head>
 <body>
 
 <header>
-  <h1>न्यू पैरामाउंट कोचिंग सेंटर</h1>
-  <p>राम जानकी मंदिर के पास, गोला रोड, दानापुर, पटना</p>
-  <p>(आर्य सर ने ठाना है, दानापुर के बच्चों को टॉपर बनाना है!)</p>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<h1>न्यू पैरामाउंट कोचिंग सेंटर</h1>
+<nav>
+<a href="index.html">मुख्य पृष्ठ</a>
+<a href="about.html">हमारे बारे में</a>
+<a href="contact.html">संपर्क करें</a>
+</nav>
 </header>
 
-<main>
-  <h2>Welcome to our Coaching Centre</h2>
-  <p>यहाँ बच्चों को IIT JEE और NEET के लिए टॉप क्लास guidance दिया जाता है।</p>
-</main>
+<div class="hero">
+<h2>स्वागत है न्यू पैरामाउंट कोचिंग में</h2>
+<p>हम IIT JEE,NDA और NEET की तैयारी के लिए उच्चतम गुणवत्ता की कक्षाएं प्रदान करते हैं। 
+अभ्यर्थियों को टॉपर बनाने का हमारा लक्ष्य है।</p>
+</div>
+
+<div class="buttons-section">
+<button id="iit-btn" onclick="window.location.href='IIT.html'">IIT Info</button>
+<button id="neet-btn" onclick="window.location.href='NEET.html'">NEET Info</button>
+</div>
+
+<section class="achievers">
+<div class="achiever-card">
+<img src="achiever11.jpg">
+</div>
+<div class="achiever-card">
+<img src="achiever12.jpg">
+</div>
+<div class="achiever-card">
+<img src="achiever7.jpg">
+</div>
+<!-- Add up to 10 achievers here -->
+</section>
 
 <footer>
-  <p>© 2025 न्यू पैरामाउंट कोचिंग सेंटर. सभी अधिकार सुरक्षित.</p>
+<p>© 2025 न्यू पैरामाउंट कोचिंग सेंटर. सभी अधिकार सुरक्षित.</p>
+<p>
+<a href="https://www.facebook.com/share/1BsDg3VDzV/">Facebook</a> |
+<a href="https://www.instagram.com/ichha_arya?igsh=MWZreHU1ZDN0cWxmOA==">Instagram</a> |
+<a href="https://youtube.com/@npcarya7651?si=fHaZY0UTWuLDPcL4">YouTube</a></p>
 </footer>
 
 </body>
