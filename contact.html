@@ -2,38 +2,121 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <title>संपर्क करें</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      padding: 20px;
-    }
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>संपर्क करें - न्यू पैरामाउंट कोचिंग</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* ===== Basic Reset ===== */
+* { margin:0; padding:0; box-sizing: border-box; }
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+    background: #0f2027;  /* fallback gradient */
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+/* ===== Particle Background ===== */
+#particles-js {
+    position: fixed;
+    top:0; left:0;</style>
 </head>
 <body>
-  <h1>संपर्क करें</h1>
-  <nav>
-    <a href="index.html">मुख्य पृष्ठ</a>
-    <a href="about.html">हमारे बारे में</a>
 
-  </nav>
-  
+<!-- Particle Background -->
+<div id="particles-js"></div>
 
-  <h3>आर्या सर – गणित विशेषज्ञ</h3>
-  <p>स्थान: राम जानकी मंदिर, गोला रोड, दानापुर, पटना - 801503</p>
-  <p>मोबाइल: 9504456606</p>
-  <p>ईमेल: vidyanand.arya0405@gmail.com</p>
+<header>
+    <h1>संपर्क करें</h1>
+    <nav>
+        <a href="index.html">मुख्य पृष्ठ</a>
+        <a href="about.html">हमारे बारे में</a>
+        <a href="contact.html">संपर्क करें</a>
+    </nav>
+</header>
 
-  <h3>दूसरा संपर्क:</h3>
-  <p>मोबाइल: 8210649931</p>
-  <p>ईमेल: vidyanandarya14@gmail.com</p>
+<main>
+    <!-- Flip Card 1 -->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3><i class="fas fa-chalkboard-teacher"></i> आस्था आर्डर – गणित विशेषज्ञ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> राम जानकी मंदिर, गोला रोड, दानापुर, पटना - 801503</p>
+            </div>
+            <div class="flip-card-back">
+                <p><i class="fas fa-phone-alt"></i> 9504456606</p>
+                <p><i class="fas fa-envelope"></i> vidyanand.arya0405@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flip Card 2 -->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">{<h3><i class="fas fa-user"></i> दूसरा संपर्क</h3>
+            </div>
+            <div class="flip-card-back">
+                <p><i class="fas fa-phone-alt"></i> 8210649931</p>
+                <p><i class="fas fa-envelope"></i> vidyanandarya14@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+        <h3>Admission / संपर्क फॉर्म</h3>
+        <input type="text" name="name" placeholder="पूरा नाम" required>
+        <input type="email" name="email" placeholder="ईमेल" required>
+        <input type="text" name="course" placeholder="चयनित कोर्स" required>
+        <textarea name="message" placeholder="संदेश लिखें" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+<footer>
+    © 2025 न्यू पैरामाउंट कोचिंग सेंटर | सभी अधिकार सुरक्षित
+</footer>
+
+<!-- Particles.js Library -->
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+    "particles": {
+        "number": { "value": 80, "density": {"enable": true, "value_area": 800} },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.3, "width": 1 },
+        "move": { "enable": true, "speed": 2 }
+    },
+    "interactivity": {
+        "events": {
+            "onhover": { "enable": true, "mode": "repulse" },
+            "onclick": { "enable": true, "mode": "push" }
+        }
+    },
+    "retina_detect": true
+});
+</script>
+
 </body>
 </html>
 `<link rel="stylesheet" href="style.css">`
